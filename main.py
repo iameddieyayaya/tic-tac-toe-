@@ -79,10 +79,10 @@ def is_winner(game_player):
 def check_victory():
     global winner_text
     if is_winner(PLAYER_1):
-        winner_text = font.render('Player 1 WON!', True, 'black')
+        winner_text = font.render('Player 1 WON!', True, 'red')
         return True
     if is_winner(PLAYER_2):
-        winner_text = font.render('Player 2 WON!', True, 'black')
+        winner_text = font.render('Player 2 WON!', True, 'red')
         return True
 
 while running:
